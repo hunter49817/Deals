@@ -158,6 +158,20 @@ img.ph{padding:0;width:100%;object-fit:cover;display:block;background:var(--surf
 .tour a{flex-basis:42%}
 .gallery img.ph{aspect-ratio:1/1}
 @media (min-width:860px){.row.tour{grid-template-columns:repeat(5,1fr)}}
+.stats{grid-template-columns:repeat(5,1fr)}
+@media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}.stat:last-child{grid-column:span 2}}
+.tourbox{display:flex;flex-direction:column;gap:8px}
+.tourbox a{display:block;position:relative;border-radius:14px;overflow:hidden}
+.tourbox a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.tourbox img{display:block;width:100%;object-fit:cover;background:var(--surface)}
+.cover img{aspect-ratio:16/10}
+.cover{box-shadow:0 14px 30px -18px rgba(0,0,0,.7)}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.thumbs img{aspect-ratio:1/1;filter:brightness(.45)}
+.thumbs a{border-radius:10px}
+.more span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:18px}
+.seeall{margin-top:10px}
+@media (min-width:860px){.cover img{aspect-ratio:2/1}.thumbs img{aspect-ratio:16/9}}
 </style>
 </head>
 <body>
@@ -174,26 +188,29 @@ img.ph{padding:0;width:100%;object-fit:cover;display:block;background:var(--surf
     <div class="price-row">
       <div class="price">$296,000</div>
     </div>
-    <div class="links"><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=2013+Mount+Mckinley+Ct+Modesto+CA+95358"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.800-7 11-7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Open in Google Maps<svg class="out" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
-    <a class="maplink" href="https://www.zillow.com/homes/2013-Mount-Mckinley-Ct-Modesto-CA-95358_rb/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11 12 4l8 7v9H4z"/><path d="M10 20v-6h4v6"/></svg>Open in Zillow<svg class="out" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
-    <a class="maplink" href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=37.5999914,-120.9965845"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.500-6 10-6 10 6 10 6-3.500 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.500"/></svg>Street View<svg class="out" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a></div>
+    <div class="links"><a class="maplink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=2013+Mount+Mckinley+Ct+Modesto+CA+95358"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.800-7 11-7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Open in Google Maps<svg class="out" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+    <a class="maplink" target="_blank" rel="noopener" href="https://www.zillow.com/homedetails/2013-Mount-Mc-Kinley-Ct-Modesto-CA-95358/82394957_zpid/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11 12 4l8 7v9H4z"/><path d="M10 20v-6h4v6"/></svg>Open in Zillow<svg class="out" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+    <a class="maplink" target="_blank" rel="noopener" href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=37.5999914,-120.9965845"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.500-6 10-6 10 6 10 6-3.500 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.500"/></svg>Street View<svg class="out" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a></div>
   </div>
 
   <div class="stats">
     <div class="stat"><b>$430k</b><small>Estimated ARV</small></div>
     <div class="stat"><b>3 / 2</b><small>Beds / Baths</small></div>
     <div class="stat"><b>1,294</b><small>Sq ft living area</small></div>
+    <div class="stat"><b>4,608</b><small>Sq ft lot size</small></div>
     <div class="stat"><b>Vacant</b><small>Occupancy</small></div>
   </div>
 
   <section>
     <h2>Photo Tour</h2>
-    <div class="row tour">
-      <a href="#exterior" aria-label="Exterior photos"><img class="ph" src="https://lh3.googleusercontent.com/d/1BTbxuLLikMvCOpqav1nMuQjbrYhQALM_=w1200" alt="Front of the house from the street"></a>
-      <a href="#living" aria-label="Living room photos"><img class="ph" src="https://lh3.googleusercontent.com/d/1Tb4dICNmRITyEeG0uEWaxIYjAjH_obHh=w1200" alt="Living room with fireplace"></a>
-      <a href="#kitchen" aria-label="Kitchen photos"><img class="ph" src="https://lh3.googleusercontent.com/d/1iifUeoBySvcXzlcQzwhWZwTkIxLVRvvx=w1200" alt="Kitchen"></a>
-      <a href="#bedrooms" aria-label="Bedroom photos"><img class="ph" src="https://lh3.googleusercontent.com/d/1CGM1hMiWOn2T-rUMYfUa6LMj4y0mhnIN=w1200" alt="Bedroom"></a>
-      <a href="#bathrooms" aria-label="Bathroom photos"><img class="ph" src="https://lh3.googleusercontent.com/d/170MMMG3RxJNa5IbJaj3fB35k5W4GW3Vf=w1200" alt="Bathroom"></a>
+    <div class="tourbox">
+      <a class="cover" href="#exterior" aria-label="Open all photos"><img src="https://lh3.googleusercontent.com/d/1BTbxuLLikMvCOpqav1nMuQjbrYhQALM_=w1200" alt="Front of the house from the street"></a>
+      <div class="thumbs">
+        <a href="#living" aria-label="Living room photos"><img src="https://lh3.googleusercontent.com/d/1Tb4dICNmRITyEeG0uEWaxIYjAjH_obHh=w1200" alt="Living room with fireplace"></a>
+        <a href="#kitchen" aria-label="Kitchen photos"><img src="https://lh3.googleusercontent.com/d/1iifUeoBySvcXzlcQzwhWZwTkIxLVRvvx=w1200" alt="Kitchen"></a>
+        <a href="#bedrooms" aria-label="Bedroom photos"><img src="https://lh3.googleusercontent.com/d/1CGM1hMiWOn2T-rUMYfUa6LMj4y0mhnIN=w1200" alt="Bedroom"></a>
+        <a class="more" href="#bathrooms" aria-label="See all 19 photos"><img src="https://lh3.googleusercontent.com/d/170MMMG3RxJNa5IbJaj3fB35k5W4GW3Vf=w1200" alt="Bathroom"><span>+15</span></a>
+      </div>
     </div>
 
     <button class="seeall" id="seeall" type="button">See all 19 photos</button>
@@ -221,7 +238,6 @@ img.ph{padding:0;width:100%;object-fit:cover;display:block;background:var(--surf
     </ul>
   </section>
 
-  <footer class="foot"><span>North Blue Investments</span><a href="https://northblue.us">northblue.us</a></footer>
   <p class="legal">North Blue is owned and operated by Aztec Investments, LLC, a private California real estate investment company. North Blue Investments is a real estate investment company, not a licensed brokerage, and does not provide brokerage services. Offers are not binding until set in writing. &copy; 2026 Aztec Investments, LLC.</p>
 </div>
 
@@ -232,7 +248,7 @@ img.ph{padding:0;width:100%;object-fit:cover;display:block;background:var(--surf
   </div>
   <div class="wrap contact" id="contact">
     <p>Call or text Hunter at 916-890-2905<small>North Blue Investments</small></p>
-    <p class="acts"><a href="sms:+19168902905"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg>Text Hunter</a><a href="tel:+19168902905"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h4l2 5-2.500 1.500a11 11 0 0 0 5 5L16 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z"/></svg>Call Hunter</a><a href="https://northblue.us"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>northblue.us</a></p>
+    <p class="acts"><a href="sms:+19168902905"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg>Text Hunter</a><a href="tel:+19168902905"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h4l2 5-2.500 1.500a11 11 0 0 0 5 5L16 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z"/></svg>Call Hunter</a><a target="_blank" rel="noopener" href="https://northblue.us"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>northblue.us</a></p>
   </div>
 </div>
 <script>
@@ -243,7 +259,7 @@ function og(id){g.classList.add('open');document.body.style.overflow='hidden';g.
 function cg(){g.classList.remove('open');document.body.style.overflow='';}
 document.getElementById('seeall').addEventListener('click',function(){og();});
 document.getElementById('gback').addEventListener('click',cg);
-document.querySelectorAll('.tour a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();og(a.getAttribute('href').slice(1));});});
+document.querySelectorAll('.tourbox a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();og(a.getAttribute('href').slice(1));});});
 document.addEventListener('keydown',function(e){if(e.key==='Escape')cg();});
 </script>
 </body>
