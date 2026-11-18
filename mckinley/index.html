@@ -172,13 +172,25 @@ img.ph{padding:0;width:100%;object-fit:cover;display:block;background:var(--surf
 .more span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:18px}
 .seeall{margin-top:10px}
 @media (min-width:860px){.cover img{aspect-ratio:2/1}.thumbs img{aspect-ratio:16/9}}
-.bar .contact{display:none}
-.bar .contact.open{display:block;padding-bottom:14px}
 .price-row{flex-wrap:nowrap;justify-content:space-between;align-items:center}
 .hint{font-family:var(--mono);font-size:10px;line-height:1.5;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);opacity:.55;text-align:right;white-space:nowrap}
 .hint span{display:block;font-size:14px;margin-top:2px;animation:nudge 1.800s ease-in-out infinite}
 @keyframes nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
 @media (prefers-reduced-motion:reduce){.hint span{animation:none}}
+/* contact row always visible under the price bar */
+body{padding-bottom:150px}
+.bar .contact{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 16px;padding-top:0;padding-bottom:12px}
+.contact p{margin:0}
+.acts{margin-top:0 !important}
+.contact.open .acts a{border-color:var(--accent)}
+@media (max-width:640px){
+  body{padding-bottom:210px}
+  .bar .contact{display:block}
+  .contact>p:first-child{font-size:13px}
+  .contact>p:first-child small{display:inline;margin-left:6px}
+  .acts{display:grid !important;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:8px !important}
+  .contact .acts a{justify-content:center;padding:9px 4px;font-size:13px;gap:5px}
+}
 </style>
 </head>
 <body>
