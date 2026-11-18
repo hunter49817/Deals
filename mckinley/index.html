@@ -210,6 +210,9 @@ body{padding-bottom:150px}
 .map{position:relative;z-index:0;height:300px;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--surface);box-shadow:0 12px 26px -16px rgba(0,0,0,.6)}
 @media (min-width:860px){.map{height:380px}}
 .map iframe{display:block;width:100%;height:100%;border:0}
+.recenter{position:absolute;top:10px;right:10px;display:inline-flex;align-items:center;gap:7px;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:9px;padding:9px 13px;font:inherit;font-size:14px;font-weight:500;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+.recenter svg{width:15px;height:15px;fill:none;stroke:var(--accent);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.recenter:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 </style>
 </head>
 <body>
@@ -292,7 +295,7 @@ body{padding-bottom:150px}
 
   <section>
     <h2>Property location</h2>
-    <div class="map"><iframe title="Map showing where the property is" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=2013+Mount+Mckinley+Ct,+Modesto,+CA+95358&z=14&output=embed" allowfullscreen></iframe></div>
+    <div class="map"><iframe title="Map showing where the property is" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=2013+Mount+Mckinley+Ct,+Modesto,+CA+95358&z=14&output=embed" allowfullscreen></iframe><button class="recenter" id="recenter" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11 12 4l8 7v9H4z"/><path d="M10 20v-6h4v6"/></svg>Back to property</button></div>
   </section>
 
   <p class="legal">North Blue is owned and operated by Aztec Investments, LLC, a private California real estate investment company. North Blue Investments is a real estate investment company, not a licensed brokerage, and does not provide brokerage services. Offers are not binding until set in writing. &copy; 2026 Aztec Investments, LLC.</p>
@@ -309,6 +312,7 @@ body{padding-bottom:150px}
   </div>
 </div>
 <script>
+var rc=document.getElementById('recenter');if(rc){rc.addEventListener('click',function(){var f=rc.parentNode.querySelector('iframe');f.src=f.src;});}
 var b=document.getElementById('want'),c=document.getElementById('contact');
 b.addEventListener('click',function(){var o=c.classList.toggle('open');b.setAttribute('aria-expanded',o);});
 var g=document.getElementById('gallery');
