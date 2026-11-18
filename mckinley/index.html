@@ -174,6 +174,23 @@ img.ph{padding:0;width:100%;object-fit:cover;display:block;background:var(--surf
 @media (min-width:860px){.cover img{aspect-ratio:2/1}.thumbs img{aspect-ratio:16/9}}
 .bar .contact{display:none}
 .bar .contact.open{display:block;padding-bottom:14px}
+/* same layout on every screen: one phone-width column, centered */
+.wrap{max-width:480px !important}
+body{font-size:16px !important}
+h1{font-size:clamp(28px,7vw,32px)}
+.price{font-size:clamp(40px,11vw,48px)}
+.stats{grid-template-columns:repeat(2,1fr) !important}
+.stat:last-child{grid-column:span 2}
+.cover img{aspect-ratio:16/10 !important}
+.thumbs img{aspect-ratio:1/1 !important}
+.seeall{width:100% !important;padding:14px !important}
+.gallery .row.shots{grid-template-columns:1fr 1fr !important;gap:10px !important}
+.terms{max-width:none !important}
+.price-row{flex-wrap:nowrap;justify-content:space-between;align-items:center}
+.hint{font-family:var(--mono);font-size:10px;line-height:1.5;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);opacity:.55;text-align:right;white-space:nowrap}
+.hint span{display:block;font-size:14px;margin-top:2px;animation:nudge 1.800s ease-in-out infinite}
+@keyframes nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+@media (prefers-reduced-motion:reduce){.hint span{animation:none}}
 </style>
 </head>
 <body>
@@ -189,6 +206,7 @@ img.ph{padding:0;width:100%;object-fit:cover;display:block;background:var(--surf
     <div class="price-note">First come, first serve at</div>
     <div class="price-row">
       <div class="price">$296,000</div>
+      <div class="hint" aria-hidden="true">Scroll down<br>for more info<span>&darr;</span></div>
     </div>
     <div class="links"><a class="maplink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=2013+Mount+Mckinley+Ct+Modesto+CA+95358"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.800-7 11-7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Open in Google Maps<svg class="out" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
     <a class="maplink" target="_blank" rel="noopener" href="https://www.zillow.com/homedetails/2013-Mount-Mc-Kinley-Ct-Modesto-CA-95358/82394957_zpid/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11 12 4l8 7v9H4z"/><path d="M10 20v-6h4v6"/></svg>Open in Zillow<svg class="out" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
