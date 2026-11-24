@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>417 E Monterey Ave | North Blue</title>
+<meta name="description" content="Property in Stockton, CA. First come, first serve at $227,000.">
+<meta property="og:title" content="417 E Monterey Ave, Stockton, CA 95204">
+<meta property="og:description" content="First come, first serve at $227,000. North Blue Investments.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: one phone-width column. Numbers first, photo tour second, terms third, contact bar pinned at the bottom. */
+:root{
+  --bg:#ffffff;
+  --surface:#f5f5f7;
+  --ink:#1d1d1f;
+  --muted:#6e6e73;
+  --line:#e3e3e8;
+  --brand:#1d1d1f;
+  --accent:#1668e3;
+  --good:#0f7a4d;
+  --good-bg:#e2f5ec;
+  --ph-a:#f0f0f3;
+  --ph-b:#e6e6eb;
+  --display:"Outfit","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --body:"Outfit","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0a121e;--surface:#121d2d;--ink:#eaf0f8;--muted:#93a3b9;--line:#24334a;
+    --brand:#8db7ff;--accent:#4a90ff;--good:#5fd6a0;--good-bg:#11301f;--ph-a:#1a283c;--ph-b:#22344e;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0a121e;--surface:#121d2d;--ink:#eaf0f8;--muted:#93a3b9;--line:#24334a;
+  --brand:#8db7ff;--accent:#4a90ff;--good:#5fd6a0;--good-bg:#11301f;--ph-a:#1a283c;--ph-b:#22344e;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;padding-bottom:96px}
+.wrap{max-width:720px;margin:0 auto;padding:0 18px}
+header.brand{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0;border-bottom:1px solid var(--line)}
+.logo{font-family:var(--display);font-weight:800;font-size:18px;color:var(--brand);letter-spacing:-.01em}
+.logo span{color:var(--muted);font-weight:600}
+.chip{display:inline-flex;align-items:center;gap:6px;background:var(--good-bg);color:var(--good);font-weight:700;font-size:13px;padding:5px 10px;border-radius:999px;white-space:nowrap}
+.chip::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--good)}
+.hero{padding:22px 0 8px;display:flex;flex-direction:column;gap:6px}
+.links{display:flex;flex-wrap:wrap;gap:6px 20px}
+.contact a{color:var(--accent);font-weight:700;text-decoration:none;margin-right:18px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(28px,7vw,40px);line-height:1.05;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.city{color:var(--muted);font-weight:500}
+.price-row{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-top:12px}
+.price{font-family:var(--display);font-weight:800;font-size:clamp(40px,11vw,56px);line-height:1;color:var(--accent);font-variant-numeric:tabular-nums}
+.price-note{color:var(--muted);font-weight:600}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0 6px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px}
+.stat b{display:block;font-family:var(--display);font-size:22px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1.1}
+.stat small{color:var(--muted);font-size:13px;font-weight:500}
+@media (max-width:520px){.stats{grid-template-columns:repeat(2,1fr)}}
+section{padding:26px 0 0}
+h2{font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:-.01em;margin:0 0 12px}
+h3{font-size:16px;font-weight:700;margin:20px 0 10px}
+.row{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;margin:0 -18px;padding-left:18px;padding-right:18px;scrollbar-width:none}
+.row::-webkit-scrollbar{display:none}
+.tour a{flex:0 0 46%;max-width:240px;scroll-snap-align:start;text-decoration:none;color:var(--ink);font-weight:600;display:flex;flex-direction:column;gap:6px}
+.tour a:focus-visible,.cta:focus-visible,.maplink:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:10px}
+.ph{aspect-ratio:4/3;border-radius:10px;background:repeating-linear-gradient(135deg,var(--ph-a) 0 14px,var(--ph-b) 14px 28px);display:flex;align-items:flex-end;padding:8px;color:var(--muted);font-size:12px;font-weight:600}
+.shots .ph{flex:0 0 78%;max-width:420px;scroll-snap-align:start}
+.terms{list-style:none;margin:0;padding:0;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.terms li{display:flex;justify-content:space-between;gap:16px;padding:13px 14px;border-bottom:1px solid var(--line)}
+.terms li:last-child{border-bottom:0}
+.terms span{color:var(--muted)}
+.terms b{font-weight:600}
+.maplink{display:inline-flex;align-items:center;gap:7px;background:var(--surface);border:1px solid var(--line);color:var(--ink);font-weight:600;font-size:14px;text-decoration:none;margin-top:8px;padding:8px 13px;border-radius:999px;box-shadow:0 1px 2px rgba(13,27,46,.08)}
+.maplink svg{width:15px;height:15px;flex:none;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.maplink svg.out{width:12px;height:12px;color:var(--muted)}
+.bar{position:fixed;left:0;right:0;bottom:0;background:var(--surface);border-top:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;padding-bottom:12px}
+.bar small{display:block;color:var(--muted);font-size:13px}
+.bar b{font-family:var(--display);font-size:20px;font-variant-numeric:tabular-nums}
+.cta{background:var(--accent);color:#fff;font-weight:700;border:0;border-radius:10px;padding:13px 18px;font-size:16px;font-family:var(--body);cursor:pointer;white-space:nowrap}
+.contact{display:none;padding:0 0 14px}
+.contact.open{display:block}
+.contact p{margin:0;color:var(--ink);font-weight:600}
+.contact p small{display:block;color:var(--muted);font-weight:500}
+h1{font-weight:600;letter-spacing:-.025em}
+h2{font-weight:600;letter-spacing:-.015em}
+.logo{font-weight:600;color:var(--ink)}
+.price{color:var(--accent);font-weight:600;letter-spacing:-.03em}
+.stat{border:0;border-radius:18px;padding:16px}
+.stat b,.bar b{font-weight:600}
+.terms{border:0;border-radius:18px}
+.terms b{font-weight:500}
+.ph{border-radius:16px}
+.maplink{border:0;box-shadow:none;font-weight:500}
+.cta{border-radius:999px;padding:12px 22px;font-weight:600}
+.bar{background:color-mix(in srgb,var(--bg) 80%,transparent);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px)}
+.price-note{margin-top:12px;font-weight:500}
+.price-row{margin-top:0}
+.stat{display:flex;flex-direction:column-reverse;justify-content:flex-end;gap:3px}
+.seeall{margin-top:14px;width:100%;background:var(--surface);border:0;border-radius:14px;padding:14px;font:inherit;font-weight:600;color:var(--ink);cursor:pointer}
+.seeall:focus-visible,.gback:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.gallery{display:none;position:fixed;inset:0;z-index:20;background:var(--bg);overflow-y:auto;padding-bottom:40px}
+.gallery.open{display:block}
+.ghead{position:sticky;top:0;z-index:1;background:var(--bg);display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);font-weight:600}
+.gback{background:var(--surface);border:0;border-radius:999px;padding:8px 14px;font:inherit;font-weight:500;color:var(--accent);cursor:pointer}
+.gallery h3{scroll-margin-top:70px;font-size:18px;font-weight:600}
+.gallery .row.shots{display:grid;grid-template-columns:1fr 1fr;gap:10px;overflow:visible;margin:0;padding:0}
+.gallery .shots .ph{max-width:none}
+.tour a{font-size:0}
+.tour a .ph{font-size:12px}
+.stat,.terms{border:1px solid var(--line);background:linear-gradient(180deg,var(--bg),var(--surface));box-shadow:inset 0 1px 0 color-mix(in srgb,#fff 14%,transparent),0 1px 2px rgba(0,0,0,.05),0 10px 22px -14px rgba(0,0,0,.22)}
+.ph{box-shadow:0 10px 24px -14px rgba(0,0,0,.35)}
+.maplink,.seeall{border:1px solid var(--line);background:linear-gradient(180deg,var(--bg),var(--surface));box-shadow:0 1px 2px rgba(0,0,0,.05)}
+.price{background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 78%,#fff),var(--accent));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;padding-bottom:2px}
+.cta{background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 80%,#fff),var(--accent));box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 6px 16px -6px color-mix(in srgb,var(--accent) 70%,transparent)}
+.foot{margin-top:28px;padding:18px 0 8px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:var(--muted);font-size:14px}
+.foot a{color:var(--accent);font-weight:600;text-decoration:none}
+/* northblue.us look: deep navy, bright blue accent, small mono labels */
+:root:root,:root:root[data-theme]{color-scheme:dark;--bg:#090D18;--surface:#131D31;--ink:#EAF0FA;--muted:#93A1BC;--line:#243450;--brand:#EAF0FA;--accent:#4F8BFF;--good:#41CB8B;--good-bg:rgba(65,203,139,.13);--ph-a:#131D31;--ph-b:#172339;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace}
+body{background:radial-gradient(900px 420px at 50% -120px,rgba(79,139,255,.16),transparent 70%) no-repeat,var(--bg)}
+.logo{font-family:var(--mono);font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+.logo i{font-style:normal;color:var(--accent)}
+.logo span{display:none}
+.price-note,.stat small{font-family:var(--mono);font-size:11px;font-weight:400;letter-spacing:.08em;text-transform:uppercase}
+.stat,.terms{background:var(--surface);box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 12px 26px -16px rgba(0,0,0,.6)}
+.maplink,.seeall{background:var(--surface);border-radius:9px;box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+.gback{border-radius:9px}
+.price{background:linear-gradient(180deg,#74A4FF,#4F8BFF);-webkit-background-clip:text;background-clip:text}
+.cta{color:#06101F;border-radius:9px;background:var(--accent);box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 6px 22px rgba(79,139,255,.28)}
+.bar{box-shadow:0 -1px 0 var(--line)}
+.legal{margin:14px 0 0;color:var(--muted);font-size:12px;line-height:1.55;opacity:.8}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px !important}
+.contact .acts a{display:inline-flex;align-items:center;gap:7px;margin:0;padding:9px 13px;border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--ink);font-weight:500;font-size:14px;box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+.acts svg{width:16px;height:16px;flex:none;fill:none;stroke:var(--accent);stroke-width:1.800;stroke-linecap:round;stroke-linejoin:round}
+.acts a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.bar b{background:linear-gradient(180deg,#74A4FF,#4F8BFF);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.cta{border:1px solid #9CBEFF;box-shadow:inset 0 1px 0 rgba(255,255,255,.28),0 6px 22px rgba(79,139,255,.28)}
+.cta{color:#fff}
+/* computer screens: wider page, covers and photos in grids */
+@media (min-width:860px){
+  .wrap{max-width:980px}
+  body{font-size:17px}
+  .row.tour{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;overflow:visible;margin:0;padding:0}
+  .tour a{max-width:none}
+  .seeall{width:auto;padding:13px 26px}
+  .gallery .row.shots{grid-template-columns:repeat(3,1fr);gap:14px}
+  .terms{max-width:560px}
+}
+img.ph{padding:0;width:100%;object-fit:cover;display:block;background:var(--surface)}
+.tour img.ph{aspect-ratio:1/1}
+.tour a{flex-basis:42%}
+.gallery img.ph{aspect-ratio:1/1}
+@media (min-width:860px){.row.tour{grid-template-columns:repeat(5,1fr)}}
+.stats{grid-template-columns:repeat(5,1fr)}
+@media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}.stat:last-child{grid-column:span 2}}
+.tourbox{display:flex;flex-direction:column;gap:8px}
+.tourbox a{display:block;position:relative;border-radius:14px;overflow:hidden}
+.tourbox a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.tourbox img{display:block;width:100%;object-fit:cover;background:var(--surface)}
+.cover img{aspect-ratio:16/10}
+.cover{box-shadow:0 14px 30px -18px rgba(0,0,0,.7)}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.thumbs img{aspect-ratio:1/1;filter:brightness(.45)}
+.thumbs a{border-radius:10px}
+.more span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:18px}
+.seeall{margin-top:10px}
+@media (min-width:860px){.cover img{aspect-ratio:2/1}.thumbs img{aspect-ratio:16/9}}
+.price-row{flex-wrap:nowrap;justify-content:space-between;align-items:center}
+.hint{font-family:var(--mono);font-size:10px;line-height:1.5;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);opacity:.55;text-align:right;white-space:nowrap}
+.hint span{display:block;font-size:14px;margin-top:2px;animation:nudge 1.800s ease-in-out infinite}
+@keyframes nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+@media (prefers-reduced-motion:reduce){.hint span{animation:none}}
+/* contact row always visible under the price bar */
+body{padding-bottom:150px}
+.bar .contact{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 16px;padding:0 18px 12px}
+.contact p{margin:0}
+.acts{margin-top:0 !important}
+.contact.open .acts a{border-color:var(--accent)}
+@media (max-width:640px){
+  body{padding-bottom:210px}
+  .bar .contact{display:block}
+  .contact>p:first-child{font-size:13px}
+  .contact>p:first-child small{display:inline;margin-left:6px}
+  .acts{display:grid !important;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:8px !important}
+  .contact .acts a{justify-content:center;padding:9px 4px;font-size:13px;gap:5px}
+}
+.details b{text-align:right}
+/* detail and terms boxes */
+.twocol{display:grid;grid-template-columns:1fr;gap:0 18px}
+@media (min-width:860px){.twocol{grid-template-columns:1fr 1fr;align-items:start}.twocol .terms{max-width:none}}
+.terms{overflow:hidden}
+.terms li{align-items:center;padding:14px 16px;border-bottom-color:color-mix(in srgb,var(--line) 60%,transparent)}
+.terms li:nth-child(even){background:rgba(255,255,255,.018)}
+.details span{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.details b{font-weight:600;text-align:right}
+.terms:not(.details) li{justify-content:flex-start;gap:12px}
+.terms:not(.details) li::before{content:"";flex:none;width:22px;height:22px;border-radius:50%;background:rgba(79,139,255,.14) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234F8BFF' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/12px no-repeat;box-shadow:inset 0 0 0 1px rgba(79,139,255,.35)}
+.terms:not(.details) b{font-weight:600}
+/* property location map */
+.map{position:relative;z-index:0;height:300px;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--surface);box-shadow:0 12px 26px -16px rgba(0,0,0,.6)}
+@media (min-width:860px){.map{height:380px}}
+.map iframe{display:block;width:100%;height:100%;border:0}
+.maptools{position:absolute;top:10px;right:10px;display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.recenter{text-decoration:none;display:inline-flex;align-items:center;gap:7px;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:9px;padding:9px 13px;font:inherit;font-size:14px;font-weight:500;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+.recenter svg{width:15px;height:15px;fill:none;stroke:var(--accent);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.recenter:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.city{color:var(--accent);font-size:20px;font-weight:600;letter-spacing:-.01em}
+@media (min-width:860px){.city{font-size:22px}}
+/* sharper bottom bar */
+.bar small{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.bar b{font-size:24px;line-height:1.15}
+.cta{border-radius:8px;font-weight:700;letter-spacing:.01em;padding:13px 22px}
+.contact .acts a{border-radius:8px;border-color:rgba(79,139,255,.45);background:#0C1322;font-weight:600;box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 2px 8px rgba(0,0,0,.35);transition:border-color .15s,background .15s}
+.contact .acts a:hover{border-color:var(--accent);background:#131D31}
+.acts svg{stroke-width:2}
+@media (min-width:860px){.seeall{display:block;margin-left:auto}}
+/* bottom bar without the big button: price left, contact right */
+body{padding-bottom:110px}
+.bar .barrow{display:flex;align-items:center;flex-wrap:wrap;gap:10px 16px;padding-top:12px;padding-bottom:12px}
+.callline{margin:0 0 0 auto;font-weight:600;font-size:15px}
+.barrow .acts{margin:0 !important}
+.barrow .acts a{display:inline-flex;align-items:center;gap:7px;margin:0;padding:9px 13px;border:1px solid rgba(79,139,255,.45);border-radius:8px;background:#0C1322;color:var(--ink);font-weight:600;font-size:14px;text-decoration:none;box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 2px 8px rgba(0,0,0,.35);transition:border-color .15s,background .15s}
+.barrow .acts a:hover{border-color:var(--accent);background:#131D31}
+@media (max-width:640px){
+  body{padding-bottom:160px}
+  .callline{font-size:13px;text-align:right;max-width:52%}
+  .barrow .acts{flex-basis:100%;display:grid !important;grid-template-columns:repeat(3,1fr);gap:6px}
+  .barrow .acts a{justify-content:center;padding:10px 4px;font-size:13px;gap:5px}
+}
+/* compact header: bigger logo, smaller brighter tag */
+header.brand{padding:11px 0}
+.hero{padding-top:16px}
+.logo{font-size:16px;letter-spacing:.22em;font-weight:500}
+.chip{font-size:11px;font-weight:600;padding:4px 9px;gap:6px;color:#34D399;background:rgba(52,211,153,.12);box-shadow:inset 0 0 0 1px rgba(52,211,153,.32)}
+.chip::before{width:6px;height:6px;background:#34D399;box-shadow:0 0 0 3px rgba(52,211,153,.18),0 0 8px rgba(52,211,153,.9)}
+/* WHITE VERSION: same blues, light surfaces */
+:root:root,:root:root[data-theme]{color-scheme:light;--bg:#FFFFFF;--surface:#F4F7FC;--ink:#0D1524;--muted:#5A6781;--line:#DCE3EE;--brand:#0D1524;--accent:#4F8BFF;--good:#0E9F6E;--good-bg:rgba(14,159,110,.10);--ph-a:#EEF2F8;--ph-b:#E3E9F2}
+body{background:radial-gradient(900px 420px at 50% -120px,rgba(79,139,255,.14),transparent 70%) no-repeat,var(--bg)}
+.stat,.terms{background:var(--surface);box-shadow:inset 0 1px 0 #fff,0 10px 24px -16px rgba(13,21,36,.28)}
+.terms li:nth-child(even){background:rgba(13,21,36,.022)}
+.maplink,.seeall{background:#fff;box-shadow:0 1px 2px rgba(13,21,36,.08)}
+.chip{color:#0E9F6E;background:rgba(14,159,110,.10);box-shadow:inset 0 0 0 1px rgba(14,159,110,.32)}
+.chip::before{background:#10B981;box-shadow:0 0 0 3px rgba(16,185,129,.16)}
+.cover{box-shadow:0 14px 30px -18px rgba(13,21,36,.45)}
+.map{box-shadow:0 12px 26px -16px rgba(13,21,36,.35)}
+.bar{box-shadow:0 -1px 0 var(--line),0 -10px 30px -18px rgba(13,21,36,.25)}
+.barrow .acts a{background:#fff;border-color:rgba(79,139,255,.55);box-shadow:0 1px 2px rgba(13,21,36,.10)}
+.barrow .acts a:hover{background:#EEF4FF}
+.recenter{background:#fff;box-shadow:0 4px 14px rgba(13,21,36,.25)}
+.price,.bar b{background:linear-gradient(180deg,#5C94FF,#3D7BF5);-webkit-background-clip:text;background-clip:text}
+.city{color:#3D7BF5}
+.hint{opacity:.7}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="brand">
+    <div class="logo"><i>North</i> Blue <span>Investments</span></div>
+    <div class="chip">Currently available</div>
+  </header>
+
+  <div class="hero">
+    <h1>417 E Monterey Ave</h1>
+    <div class="city">Stockton, CA 95204</div>
+    <div class="price-note">First come, first serve at</div>
+    <div class="price-row">
+      <div class="price">$227,000</div>
+      <div class="hint" aria-hidden="true">Scroll down<br>for more info<span>&darr;</span></div>
+    </div>
+    <div class="links"><a class="maplink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=417+E+Monterey+Ave%2C+Stockton%2C+CA+95204"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.800-7 11-7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Open in Google Maps<svg class="out" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+    <a class="maplink" target="_blank" rel="noopener" href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=37.978541821292,-121.293973511904"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7.500s3.200-4.500 9-4.500 9 4.500 9 4.500-3.200 4.500-9 4.500-9-4.500-9-4.500z"/><circle cx="12" cy="7.500" r="1.700"/><path d="M9.500 15 5 22.500M14.500 15 19 22.500"/><path d="M12 15.500v7" stroke-dasharray="2 2.200"/></svg>Street View<svg class="out" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a></div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b>$370k</b><small>Estimated ARV</small></div>
+    <div class="stat"><b>6,000</b><small>Sq ft lot size</small></div>
+    <div class="stat"><b>Vacant</b><small>Occupancy</small></div>
+  </div>
+
+  <div class="twocol">
+  <section>
+    <h2>Additional details</h2>
+    <ul class="terms details">
+      <li><span>HOA</span><b>None</b></li>
+      <li><span>Access</span><b>Appointment only</b></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Terms required</h2>
+    <ul class="terms">
+      <li><b>Non contingent</b></li>
+      <li><b>Non refundable EMD</b></li>
+      <li><b>14 day close</b></li>
+      <li><b>Buyer covers closing costs</b></li>
+    </ul>
+  </section>
+  </div>
+
+  <section>
+    <h2>Property location</h2>
+    <div class="map"><iframe title="Map showing where the property is" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=417+E+Monterey+Ave%2C+Stockton%2C+CA+95204&z=17&t=h&output=embed" allowfullscreen></iframe><div class="maptools"><button class="recenter" id="recenter" type="button">Re-center</button></div></div>
+  </section>
+
+  <p class="legal">North Blue is owned and operated by Aztec Investments, LLC, a private California real estate investment company. North Blue Investments is a real estate investment company, not a licensed brokerage, and does not provide brokerage services. Offers are not binding until set in writing. &copy; 2026 Aztec Investments, LLC.</p>
+</div>
+
+<div class="bar">
+  <div class="wrap barrow">
+    <div class="pricebox"><small>First come, first serve at</small><b>$227,000</b></div>
+    <p class="callline">Call or text Hunter at 916-890-2905</p>
+    <p class="acts"><a href="sms:+19168902905"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg>Text Hunter</a><a href="tel:+19168902905"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h4l2 5-2.500 1.500a11 11 0 0 0 5 5L16 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z"/></svg>Call Hunter</a><a target="_blank" rel="noopener" href="https://northblue.us"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>northblue.us</a></p>
+  </div>
+</div>
+
+<script>
+var rc=document.getElementById('recenter');if(rc){rc.addEventListener('click',function(){var f=rc.parentNode.querySelector('iframe');f.src=f.src;});}
+var g=document.getElementById('gallery');
+function og(id){if(!g)return;g.classList.add('open');document.body.style.overflow='hidden';g.scrollTop=0;if(id){var t=document.getElementById(id);if(t)t.scrollIntoView();}}
+function cg(){if(!g)return;g.classList.remove('open');document.body.style.overflow='';}
+var sa=document.getElementById('seeall');if(sa)sa.addEventListener('click',function(){og();});
+var gb=document.getElementById('gback');if(gb)gb.addEventListener('click',cg);
+document.querySelectorAll('.tourbox a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();og(a.getAttribute('href').slice(1));});});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')cg();});
+(function(){var b=new URLSearchParams(location.search).get('b');if(!b)return;var d=location.pathname.split('/').filter(Boolean).pop();var t0=Date.now();var api='https://northblue-dispo.pages.dev/api/view';function ping(ev){var s=Math.round((Date.now()-t0)/1000);var body=JSON.stringify({deal:d,b:b,seconds:s,ev:ev});if(navigator.sendBeacon){navigator.sendBeacon(api,new Blob([body],{type:'text/plain'}));}else{fetch(api,{method:'POST',body:body,keepalive:true}).catch(function(){});}}ping('open');var iv=setInterval(function(){ping('tick');},15000);window.addEventListener('pagehide',function(){clearInterval(iv);ping('leave');});})();
+</script>
+</body>
+</html>
