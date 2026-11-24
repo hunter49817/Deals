@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>North Blue</title>
+<script>
+// Short buyer links look like /mckinley/k7m2p. Send them to the deal page with the code attached. Anything else goes home.
+(function(){var p=location.pathname.split('/').filter(Boolean);
+if(p.length===2&&/^[a-z0-9]{4,8}$/.test(p[1])){location.replace('/'+p[0]+'/?b='+p[1]);return;}
+if(p.length===1){location.replace('/'+p[0]+'/');return;}
+location.replace('https://northblue.us/');})();
+</script></head><body></body></html>
